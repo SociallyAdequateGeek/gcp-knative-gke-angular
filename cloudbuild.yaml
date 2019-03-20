@@ -1,0 +1,9 @@
+steps:
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/gcp-knative-gke-angular', '.' ]
+
+
+images:
+
+- 'gcr.io/$PROJECT_ID/gcp-knative-gke-angular'
